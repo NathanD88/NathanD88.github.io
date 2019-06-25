@@ -5,7 +5,7 @@ const greenBkg = {
 //uses round brackets
 const JSX = (
 	<div>
-		<h1>Hello JSX</h1>
+		<h1>Hello JSX!</h1>
 		<h1 style={greenBkg} className="green-bkg">This element has a "green-bkg" class</h1>
 	</div>
 );
