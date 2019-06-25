@@ -22,4 +22,4 @@ const MyComponent = function(){
 //render the component
 //parameter 1 is the component to render
 //parameter 2 is the destination container to render to
-ReactDOM.render(JSX, document.getElementById("root"));
+ReactDOM.render(<MyComponent />, document.getElementById("root"));
