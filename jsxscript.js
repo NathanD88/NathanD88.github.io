@@ -82,7 +82,7 @@ class MagicEightBall extends React.Component {
 			</div>
 		);
 	}
-}
+};
 
 
 
