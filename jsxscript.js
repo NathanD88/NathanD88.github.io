@@ -65,7 +65,7 @@ class MagicEightBall extends React.Component {
 	}
 }
 
-ReactDOM.render(MagicEightBall, document.getElementById("root"));
+ReactDOM.render(<MagicEightBall />, document.getElementById("app"));
 
 
 
