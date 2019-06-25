@@ -3,7 +3,7 @@ const inputStyle = {
 	margin: 5
 }
 
-class MagicEightBall extends React.component {
+class MagicEightBall extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = {
