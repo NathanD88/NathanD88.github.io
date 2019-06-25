@@ -29,7 +29,7 @@ class MagicEightBall extends React.Component {
 	render(){
 		const answers = [
 			'It is certain',
-      'It is decidedly so',
+                        'It is decidedly so',
 			'Without a doubt', 
 			'Yes, definitely',
 			'You may rely on it',
