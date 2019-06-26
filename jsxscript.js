@@ -8,7 +8,8 @@ class MagicEightBall extends React.Component {
 		super(props);
 		this.state = {
 			userInput: '',
-			randomIndex: ''
+			randomIndex: '',
+			question: ''
 		}
 		this.ask = this.ask.bind(this);
 		this.handleChange = this.handleChange.bind(this);
@@ -17,6 +18,7 @@ class MagicEightBall extends React.Component {
 		if(this.state.userInput){
 			this.setState({
 				randomIndex: Math.floor(Math.random() * 20),
+				question: userInput,
 				userInput: ''
 			});
 		}
@@ -57,9 +59,7 @@ class MagicEightBall extends React.Component {
 				<button onClick={this.ask}>Ask a question</button>
 				<br />
 				<h3>Answer</h3>
-				<p>
-				{answer}
-				</p>
+				<p>{answer}</p>
 			</div>
 		)
 	}
