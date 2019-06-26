@@ -2,7 +2,11 @@ const inputStyle = {
 	width: 235,
 	margin: 5
 }
-
+const eightBallStyle = {
+	textAlign: "center",
+	margin: "auto",
+	borderRadius: "50%"
+}
 class MagicEightBall extends React.Component {
 	constructor(props){
 		super(props);
@@ -54,7 +58,7 @@ class MagicEightBall extends React.Component {
 		const answer = answers[this.state.randomIndex];
 		const question = this.state.userQuestion;
 		return (
-			<div>
+			<div style={eightBallStyle}>
 				<input type="text" value={this.state.userInput} onChange={this.handleChange} style={inputStyle} />
 				<br />
 				<button onClick={this.ask}>Ask a question</button>
