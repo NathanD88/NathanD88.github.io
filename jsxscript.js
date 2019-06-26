@@ -58,6 +58,8 @@ class MagicEightBall extends React.Component {
 				<br />
 				<button onClick={this.ask}>Ask a question</button>
 				<br />
+				<h3>Question</h3>
+				<p>{this.state.question}</p>
 				<h3>Answer</h3>
 				<p>{answer}</p>
 			</div>
