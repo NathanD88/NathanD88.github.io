@@ -18,6 +18,7 @@ class MagicEightBall extends React.Component {
 		if(this.state.userInput){
 			this.setState({
 				randomIndex: Math.floor(Math.random() * 20),
+				userQuestion: this.state.userInput,
 				userInput: ''
 			});
 		}
@@ -25,7 +26,6 @@ class MagicEightBall extends React.Component {
 	handleChange(event){
 		this.setState({
 			userInput: event.target.value,
-			userQuestion: event.target.value
 		});
 	}
 	render(){
