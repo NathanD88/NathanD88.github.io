@@ -1,24 +1,159 @@
-<!doctype html>
-<html>
-	<head>
-		<title>Nathan's React Examples</title>
-		<!-- Load React API -->
-		<script src= "https://unpkg.com/react@16/umd/react.production.min.js"></script>
-		<!-- Load React DOM-->
-		<script src= "https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-		<!-- Load Babel Compiler -->
-		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-		<!-- Load in our custom script -->
-		<script src="jsxscript.js" type="text/jsx"></script>
-	</head>
-	<body id="root">	
-		<!-- div for rendering -->
-		<a hidden href="msgs.json" target="_blank">messages<a/>
-		<a hidden href="Balls.mp3" target="_blank">Balls</a>
-		<img hidden src="8ball.JPG">
-		<div id="app">
-		</div>
-	</body>
-	<footer>
-	</footer>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <script defer src="./main.js"></script>
+    </head>
+    <body>
+
+        <div class="page-container">
+            <div class="navbar">
+                <button id="menuBtn" onclick="menuFunction()">
+                    <i class="material-icons icon">&#xe5d2;</i>
+                    <p style="font-size: 21px; margin: 0px; margin-left: 5px;">Menu</p>
+                </button>
+            </div>
+            <div class="menu-modal" id="menuModal">
+                <div class="menu-container" id="menu">
+                    <a id="aheader" class="menu-content" onclick="smoothScrollTo('header')">Welcome</a>
+                    <a id="aprojects-external" class="menu-content" onclick="smoothScrollTo('projects-external')">External Projects</a>
+                    <a id="aprojects-internal" class="menu-content" onclick="smoothScrollTo('projects-internal')">Internal Projects</a>
+                    <a id="afooter" class="menu-content" onclick="smoothScrollTo('footer')">Footer</a>
+                </div>
+            </div>
+            <div id="header" class="page-content">
+                <div class="paper">
+                    <img src="programmer.png" alt="myImg" class="paperimg"/>
+                    <div class="bio">
+                        <h1 style="text-align: center; font-size: 4em;">Welcome!</h1>
+                        <h2 style="text-align: center; font-size: 1.5em">Thanks for visiting my page</h2>
+                        <p style="text-align: center;">My name is Nathan Drew</p>
+                        <p style="text-align: center;">Programmer/Web Developer from Ontario, Canada</p>
+                        <p style="text-align: center;">Alumni of St. Lawrence College</p>
+                        <p style="text-align: center;">Proficient in many programming languages:</p>
+                        <ul style="text-align: left;">
+                            <li>- C++</li>
+                            <li>- C#</li>
+                            <li>- Python</li>
+                            <li>- HTML, CSS, JavaScript</li>
+                            <li>- Node.js, React and Redux</li>
+                            <li>- jQuery</li>
+                            <li>- Bootstrap</li>
+                            <li>- MERN full stack applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="projects-external" class="page-content">
+                <div class="panel">
+                    <div class="card">
+                        <a href="https://codepen.io/NathanD88/full/ormBvb" target="_blank">
+                            <img src="./markdown.PNG" alt="markdown Previewer" />
+                            <p><b>Markdown Previewer Project</b></p>
+                            <p>
+                                Markdown previewer made with <b>React</b> and <b>Marked</b>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://codepen.io/NathanD88/full/ydPgGJ" target="_blank">
+                            <img src="./documentationproject.png" alt="Documentation Project" />
+                            <p><b>Documentation Project</b></p>
+                            <p>
+                                A responsive Technical Documentation site made with css and javascript
+                            </p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://codepen.io/NathanD88/full/LwNgMJ" target="_blank">
+                            <img src="./barchartd3.png" alt="Bar Chart Project" />
+                            <p><b>Bar Chart D3 visualization</b></p>
+                            <p>
+                                Bar chart to represent gross domestic product profits. Made using D3
+                            </p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://codepen.io/NathanD88/full/pXqjZv" target="_blank">
+                            <img src="./calculatorjs.png" alt="Calculatorjs Project" />
+                            <p><b>Javascript Calculator</b></p>
+                            <p>
+                                Calculator made with only javascript, css and html.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://github.com/NathanD88/React-Redux-project" target="_blank">
+                            <img src="./reactredux.png" alt="React-Redux Project" />
+                            <p><b>React-Redux project</b></p>
+                            <p>
+                                something made with React and Redux. github project.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://github.com/NathanD88/pokemon-api-app" target="_blank">
+                            <img src="./pokeapi.png" alt="Poke-Api Project" />
+                            <p><b>Pokemon App</b></p>
+                            <p>
+                                Pokemon Api server made with node.js, express and react. github project.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="projects-internal" class="page-content">
+                <div class="panel">
+                    <div class="section">
+                        <b>Title:</b> <p>Scavengers - javascript Edition</p> <br />
+                        <b>Language/addons:</b> <p>JavaScript, CSS and HTML</p><br />
+                        <b>Description:</b>
+                        <p>
+                            &emsp;Originally written in unity c# as a tutorial into 2D programming. 
+                            All visual and audio artwork is property of unity technologies.
+                            Original game design by unity. Rewritten in JavaScript using the 
+                            canvas html component.
+                        </p><br />
+                        <a href="./scavengers/index.html" target="_blank">
+                            <h2>Scavengers - Javascript Edition</h2>
+                            <img src="./scavengerspng.PNG" alt="scavengerspng"/>
+                        </a>
+                    </div>
+                    <div class="section">
+                        <b>Title:</b> <p>Magic 8 Ball</p><br />
+                        <b>Language/addons:</b> <p>React, JavaScript and CSS. Compiled with babel.</p><br/>
+                        <b>Description:</b>
+                        <p>
+                            &emsp;Based on the retro toy from the 50's, the magic 8 Ball. 
+                            Ask a question and it will predict the future!... well almost...
+                            Made with React and Compiled with babel in browser.
+                        </p><br />
+                        <a href="./magic8ball/index.html" target="_blank">
+			    <h2>Magic 8 Ball App</h2>
+                            <img src="./magic8ball.png" alt="magic8ball"/>
+                        </a>
+                    </div>
+                    <div class="section">
+                        <b>Title:</b> <p>Sample Project</p><br/>
+                        <b>Language/addons:</b><p>languages and libraries.</p><br/>
+                        <b>Description:</b>
+                        <p>
+                            &emsp;elaborated description of the app
+                        </p>
+                        <img src="" alt=""/>
+                    </div>
+                </div>
+            </div>
+            <div id="footer" class="page-content">
+                footer stuff, disclaimers, honorable mentions
+            </div>
+        </div>
+
+    </body>
 </html>

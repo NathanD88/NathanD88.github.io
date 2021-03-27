@@ -1,0 +1,32 @@
+*{
+    margin: 0 0;
+}
+body{
+    overflow: hidden;
+    display:fixed;
+    min-width: 700px!important;
+    min-height: 700px!important;
+}::-webkit-scrollbar{
+    display: none;
+}
+.container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 700px!important;
+    min-height: 700px!important;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(19, 19, 19);
+    overflow: hidden;
+}
+.bkg-canvas{
+    box-sizing: border-box;
+    
+    position: fixed;
+}
+.canvas {
+    box-sizing: border-box;
+    position: fixed;
+}

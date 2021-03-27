@@ -1,0 +1,30 @@
+[
+	{
+		"id" : 0,
+		"sender" : "Frank S.",
+		"receiver" : "Nathan D.",
+		"content" : "Hello, Please call me back",
+		"delivered" : "false"
+	},
+	{
+		"id" : 1,
+		"sender" : "Nathan D.",
+		"receiver" : "Frank S.",
+		"content" : "No answer, available Monday",
+		"delivered" : "false"
+	},
+	{
+		"id" : 2,
+		"sender" : "Jim B.",
+		"receiver" : "Jim D.",
+		"content" : "Lunch today?",
+		"delivered" : "true"
+	},
+	{
+		"id" : 3,
+		"sender" : "Jim D.",
+		"receiver" : "Jim B.",
+		"content" : "Hello, Please call me back",
+		"delivered" : "false"
+	}
+]
